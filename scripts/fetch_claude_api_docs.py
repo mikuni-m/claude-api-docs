@@ -86,12 +86,12 @@ def save_manifest(docs_dir: Path, manifest: dict) -> None:
     manifest_path = docs_dir / MANIFEST_FILE
     manifest["last_updated"] = datetime.now().isoformat()
 
-    github_repo = os.environ.get('GITHUB_REPOSITORY', 'YOUR_USERNAME/claude-api-docs')
+    github_repo = os.environ.get('GITHUB_REPOSITORY', 'mikuni-m/claude-api-docs')
     github_ref = os.environ.get('GITHUB_REF_NAME', 'main')
 
     if not re.match(r'^[\w.-]+/[\w.-]+$', github_repo):
         logger.warning(f"Invalid repository format: {github_repo}, using default")
-        github_repo = 'YOUR_USERNAME/claude-api-docs'
+        github_repo = 'mikuni-m/claude-api-docs'
 
     if not re.match(r'^[\w.-]+$', github_ref):
         logger.warning(f"Invalid ref format: {github_ref}, using default")

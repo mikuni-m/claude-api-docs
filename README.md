@@ -34,7 +34,7 @@ bash install.sh
 Edit `install.sh` and set `GITHUB_REPO_URL`, then:
 
 ```bash
-curl -fsSL https://raw.githubusercontent.com/YOUR_USERNAME/claude-api-docs/main/install.sh | bash
+curl -fsSL https://raw.githubusercontent.com/mikuni-m/claude-api-docs/main/install.sh | bash
 ```
 
 Then fetch the docs:

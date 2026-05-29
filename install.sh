@@ -36,7 +36,7 @@ echo "✓ All dependencies satisfied"
 # Determine source: GitHub repo or local directory
 # If run from the repo directory itself, use local copy
 SCRIPT_DIR="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
-GITHUB_REPO_URL="https://github.com/YOUR_USERNAME/claude-api-docs.git"
+GITHUB_REPO_URL="https://github.com/mikuni-m/claude-api-docs.git"
 
 echo ""
 
